@@ -4,32 +4,95 @@
     <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <style>
+
+      #name{
+        font-family: 'Lato', sans-serif;
+        
+      }
+
+      #description{
+        font-family: 'Raleway', sans-serif;
+      }
+      .title{
+        background-color:#525251;
+        color: #EBFAFF;
+        padding: 5px 30px;
+        border-radius: 5px;
+      }
+
+
+      body,li{
+        background-color: #EBFAFF;
+        color: #525251;
+      }
+
+      strong{
+        color:#F9A276;
+        font-weight: bold;       
+      }
+
+      .abiliity-1{
+        font-size:25px;
+      }
+
+      .abiliity-2{
+        font-size: 20px;
+      }
+
+      .link { 
+        text-decoration: none;
+        color: #8AC4FF;
+        font-style: italic;
+      }
+
+      .anchor{
+        text-decoration: none;
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 20px;
+        color:#525251;
+      }
+
+      .round{
+        border-radius: 10px;
+
+      }
+
+
+
+
+    </style>
 </head>
+
 <body>
-  <h1 id="perfil">Danilo Pereira Santos</h1>
-  <img src="imagens/foto.jpeg" alt="Foto de perfil de Danilo Pereira Santos" width="200px">
+  <h1 id="name" class="title">Danilo Pereira Santos</h1>
+  <img class="round" src="imagens/foto.jpeg" alt="Foto de perfil de Danilo Pereira Santos" width="200px">
   
-  <p>
-    Meu nome é Danilo Pereira Santos tenho 30 anos. <br> 
-    Sou natural de Itaquaquecetuda, São Paulo. <br>
-    Me formei como Tecnólogo na área de Construção Civil, porém hoje sou estudante da Trybe.
+  <p id="description">
+    Meu nome é Danilo Pereira Santos, tenho 30 anos. <br> 
+    Sou <strong>brasileiro</strong>, natural de <strong>Itaquaquecetuda</strong>, São Paulo. <br>
+    Me formei como Tecnólogo na área de Construção Civil, porém hoje sou estudante da <strong>Trybe</strong>.
   </p>
 
-  <h3 id="habilidades">Habilidades:</h3>
+  <h3 class="title" id="habilidades">Habilidades:</h3>
   <ul>
-    <li><strong>Dedicado;</strong></li>
-    <li>Persistente;</li>
-    <li>Atencioso;</li>
-    <li>Criativo;</li>
+    <li class="abiliity-1"><strong>Dedicado;</strong></li>
+    <li class="abiliity-2">Persistente;</li>
+    <li class="abiliity-1">Atencioso;</li>
+    <li class="abiliity-2"> Criativo;</li>
   </ul>
 
-  <p id="leitura"><strong></strong>Leitura:</strong> <a href="https://olhardigital.com.br/" target="_blanck">Olhar Digital</a></p> 
+  <h3 class="title">Leitura: <a class="link" href="https://olhardigital.com.br/" target="_blanck">Olhar Digital</a></h3> 
 
-  <h3>Índice da página:</h3>
+  <h3 class="title">Índice da página:</h3>
   <ul>
-    <li><a href="#perfil"><em>Perfil</em></a></li>
-    <li><a href="#habilidades"> <em>Habilidades</em></a></li>
-    <li><a href="#leitura"><em>Leitura</em> </a></li>
+    <li><a class="anchor" href="#perfil"><em>Perfil</em></a></li>
+    <li><a class="anchor" href="#habilidades"> <em>Habilidades</em></a></li>
+    <li><a class="anchor" href="#leitura"><em>Leitura</em> </a></li>
   </ul>
 </body>
 </html>
